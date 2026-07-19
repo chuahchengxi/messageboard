@@ -10,9 +10,22 @@
 		38B11512300D0662005C6BEC /* messageboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messageboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		38B11521300D06D3005C6BEC /* Exceptions for "messageboard" folder in "messageboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 38B11511300D0662005C6BEC /* messageboard */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		38B11514300D0662005C6BEC /* messageboard */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				38B11521300D06D3005C6BEC /* Exceptions for "messageboard" folder in "messageboard" target */,
+			);
 			path = messageboard;
 			sourceTree = "<group>";
 		};
@@ -253,6 +266,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = messageboard/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used to find nearby devices to share messages";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +299,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = messageboard/Info.plist;
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Used to find nearby devices to share messages";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
