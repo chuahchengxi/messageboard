@@ -6,16 +6,16 @@
 //
 import Foundation
 
-struct ChatMessage: Codable, Identifiable{
+struct ChatMessage: Codable, Identifiable {
     let id: UUID
     let text: String
     let content: String
-    let sender: String
-    init(id:UUID = UUID(),text:String,content:String, sender:String){
+    let sender: String 
+
+    init(id: UUID = UUID(), text: String, content: String = "", sender: String) {
         self.id = id
         self.text = text
         self.content = content
         self.sender = sender
     }
-    
 }
