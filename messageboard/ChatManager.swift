@@ -68,7 +68,7 @@ class ChatManager: NSObject, ObservableObject {
         
         guard !session.connectedPeers.isEmpty else { return }
         do {
-            let data = try JSONEncoder().encode(message)  // struct -> bytes
+            let data = try JSONEncoder().encode(message)
             try session.send(data, toPeers: session.connectedPeers, with: .reliable)
         } catch {
             print("send failed:", error)

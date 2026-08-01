@@ -7,7 +7,7 @@
 import Foundation
 import SwiftData
 
-@Model
+@Model //creating data persistence relationships//
 final class StoredMessage {
     var id: UUID
     var text: String

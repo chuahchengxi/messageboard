@@ -10,12 +10,12 @@ import SwiftData
 
 @main
 struct messageboardApp: App {
-    // The ModelContainer is the SwiftData database itself.This is for the whole app.//
+    //this is for the whole app//
     let container: ModelContainer
     @StateObject private var chat: ChatManager
 
     init() {
-//Build the database then tell it what to store.
+//builds the app and then stores it//
         let container: ModelContainer
         do {
             container = try ModelContainer(for: StoredMessage.self)
@@ -23,7 +23,6 @@ struct messageboardApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
         self.container = container
-
         // tell ChatManager to save the messages into the databse
         _chat = StateObject(wrappedValue: ChatManager(modelContext: container.mainContext))
     }
